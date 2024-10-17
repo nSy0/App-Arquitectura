@@ -1,0 +1,58 @@
+
+
+<div class="flex-div">
+  <aside class="aside-color">
+    <ul class="list-aside">
+      <div>
+        <li><a href="" class="links">Registrar delito</a></li>
+        <li><a href="" class="links">Reportes</a></li>
+        <li><a href="" class="links">hola</a></li>
+        <li><a href="" class="links">hola</a></li>
+        <li><a href="" class="links">hola</a></li>
+      </div>
+      
+      <div>
+        <p><a (click)="logout()">Log out</a></p>
+      </div>
+    </ul>
+  </aside>
+
+  <div class="cont-delito" color="primary" style="background-color: red;"> 
+      <form (ngSubmit)="addDelito()">
+        
+  
+        <ion-item>
+          <ion-label position="floating">Nombre victima</ion-label>
+          <ion-input  name="nombre_vic" [(ngModel)]="delito.nombre_vic" required></ion-input>
+        </ion-item>
+  
+  
+        <ion-item>
+          <ion-label position="floating">Dirección del suceso</ion-label>
+          <ion-input  name="direc_delito" [(ngModel)]="delito.direc_delito"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="floating">Medio de transporte</ion-label>
+          <ion-input  name="tipo_transporte" [(ngModel)]="delito.tipo_transporte"></ion-input>
+        </ion-item>
+  
+  
+        <ion-item>
+          <ion-label position="floating">Descripción del delincuente</ion-label>
+          <ion-input  name="desc_delin" [(ngModel)]="delito.desc_delin"></ion-input>
+        </ion-item>
+  
+  
+        <ion-button type="submit" expand="block" fill="clear" shape="round">
+          Registrar delito
+        </ion-button>
+  
+  
+  
+      </form>
+  </div> 
+
+  
+</div>
+  

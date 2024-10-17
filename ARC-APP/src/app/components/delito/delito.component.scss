@@ -1,0 +1,34 @@
+.cont-delito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para centrar verticalmente */
+    width: 100%;
+    max-width: 500px;
+    
+}
+
+.flex-div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.aside-color{
+    background-color: #00234c;
+    width: 20%;
+    padding: 20px;}
+
+.cont-delito{
+    background-color: red;
+    height: 100vh;
+    width: 80%;
+}
+
+.list-aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+}

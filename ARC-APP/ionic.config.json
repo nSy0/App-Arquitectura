@@ -1,0 +1,7 @@
+{
+  "name": "ARC-APP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
