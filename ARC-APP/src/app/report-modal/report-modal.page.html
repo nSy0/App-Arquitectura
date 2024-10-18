@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalles del Reporte</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-content>
+    <p><strong>Número de reporte:</strong> {{ delito }}</p>
+    <p><strong>Fecha del delito:</strong> {{ delito}}</p>
+    <p><strong>Nombre de la víctima:</strong> {{ delito }}</p>
+  
+    <!-- Aquí va el mapa -->
+    <div id="map" style="height: 300px;"></div>
+  </ion-content>
+</ion-content>

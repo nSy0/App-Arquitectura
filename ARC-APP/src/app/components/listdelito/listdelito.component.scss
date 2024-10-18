@@ -1,0 +1,58 @@
+
+.container {
+    display: flex;
+}
+
+.aside-color{
+    width: 150%; 
+    background-color: #00234c;
+    width: 20%;
+    padding: 20px;
+}
+
+.list-aside{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+.cont-card{
+    display: flex;
+    width: 100%;/* El restante espacio para la carta */
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cardDelito {
+    width: 80%; /* Tamaño de las tarjetas */
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.cardDelito:hover {
+    transform: translateY(-10px); /* Mueve la tarjeta hacia arriba */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Aumenta la sombra para el efecto levantado */
+}
+
+.btn-report{
+    width: 100%;
+    background-color: #00234c;  /* Color de fondo */
+    color: yellow;              /* Color del texto */        
+    padding: 10px 20px;         /* Ajuste de padding para un botón más grande */
+    border-radius: 10px;         /* Bordes redondeados */
+    border: none;               /* Sin bordes adicionales */
+    font-size: 16px;            /* Tamaño del texto */
+    transition: transform 0.2s ease-in-out; /* Animación suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-report:hover {
+  transform: scale(1.05); /* Agrandar un poco cuando pases el mouse */
+}
+

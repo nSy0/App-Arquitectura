@@ -38,12 +38,9 @@
 
 body{
     height: 100%;
+    background-color: #f2f2f2;  /* Un gris pastel claro */
 }
 
-.boton{
-    --background: #00234c;
-}
-
-.btn-txt{
-    --color: black;
+ion-item {
+    --background: transparent;  /* Esto aplica a todos los ion-item */
 }

@@ -13,9 +13,7 @@ import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
 
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-/* SIDEBAR: */
 
-/* SIDEBAR: */
 @NgModule({
   declarations: [AppComponent],
   imports: [

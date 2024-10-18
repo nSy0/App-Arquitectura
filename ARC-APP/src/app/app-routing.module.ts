@@ -20,7 +20,11 @@ const routes: Routes = [
   {
     path: 'listar-delitos',
     loadChildren: () => import('./listar-delitos/listar-delitos.module').then( m => m.ListarDelitosPageModule)
+  },  {
+    path: 'report-modal',
+    loadChildren: () => import('./report-modal/report-modal.module').then( m => m.ReportModalPageModule)
   }
+
 ];
 
 @NgModule({

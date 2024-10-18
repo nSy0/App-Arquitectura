@@ -9,16 +9,16 @@
     
 }
 
-.flex-div{
+.container {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
 }
+
 
 .aside-color{
     background-color: #00234c;
     width: 20%;
-    padding: 20px;}
+    padding: 20px;
+}
 
 .cont-delito{
     background-color: red;
