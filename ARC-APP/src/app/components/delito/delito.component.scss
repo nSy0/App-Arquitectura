@@ -16,16 +16,49 @@
 
 .aside-color{
     background-color: #00234c;
-    width: 20%;
     padding: 20px;
+    width: 20vw;
 }
+
+.aside-color .list-aside{
+    list-style: none;
+    padding: 0;
+}
+
+.aside-color .list-aside li{
+    padding: 5px;
+    margin: 10px;
+    transition: ease-in .3s;
+
+}
+
+.aside-color .list-aside li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.aside-color .list-aside li:hover{
+    background-color: #e6bc02;
+    transition:  .5s;
+    margin: 10px 5px;
+}
+
 
 .cont-delito{
-    background-color: red;
     height: 100vh;
-    width: 80%;
+    max-width: 80vw;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+
 }
 
+.cont-delito form{
+    
+}
 .list-aside{
     display: flex;
     flex-direction: column;
