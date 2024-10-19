@@ -50,18 +50,42 @@
     max-width: 80vw;
     width: 80vw;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     padding: 20px;
 
 }
 
 .cont-delito form{
-    
+    border: 1px solid black;
+    margin: 10px;    
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(151, 151, 151);
+    width: 500px;
 }
+
+.cont-delito form > ion-item{
+    margin: 20px;
+    color: black;
+}
+
+.cont-delito form > ion-item > ion-label{
+    margin-bottom: 5px;
+}
+
+.cont-delito form > ion-button{
+    background-color: #00234c;
+    border-radius: 7px;
+    color: white;
+    height: 45px;
+    font-size: large;
+    margin: 10px;
+}
+
 .list-aside{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 90vh;
 }
+
