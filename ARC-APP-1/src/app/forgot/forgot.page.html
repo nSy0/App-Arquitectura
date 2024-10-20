@@ -1,0 +1,39 @@
+
+<app-header title="Recupera tu contraseña"></app-header>
+
+<div class="container">
+
+  <div class="recuperar-container">
+
+    <form #loginForm="ngForm" (ngSubmit)="recuperar()">
+      <div class="logo-cont">
+        <app-logo></app-logo>
+      </div>
+
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input
+          type="email"
+          name="email"
+          [(ngModel)]="email"
+          required
+          email
+          #emailCtrl="ngModel"
+        ></ion-input>
+      </ion-item>
+      <div *ngIf="emailCtrl.invalid && emailCtrl.touched" class="error-message">
+        <p *ngIf="emailCtrl.errors?.['required']">El email es obligatorio.</p>
+        <p *ngIf="emailCtrl.errors?.['email']">Ingresa un email válido.</p>
+      </div>
+
+      <button
+        class="boton-recuperar"
+        type="submit"
+        [disabled]="loginForm.invalid"> Recuperar contraseña
+      </button>
+    </form>
+
+  </div>
+</div>
+
+

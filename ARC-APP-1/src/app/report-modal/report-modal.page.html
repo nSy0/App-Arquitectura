@@ -1,0 +1,30 @@
+
+<div class="container">
+<app-header title="Reportes de delito">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button class="btn-modal" (click)="closeModal()">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</app-header>
+
+
+  <ion-content class="modal-content ion-justify-content-start">
+      <p><strong>Número de reporte: </strong> {{ delito.num_delito }}</p>
+      <p><strong>Nombre de la víctima: </strong> {{ delito.nombre_vic }}</p>
+      <p><strong>Fecha del delito: </strong> {{ delito.fecha_delito}} </p>
+      <p><strong>Medio de transporte: </strong> {{ delito.tipo_transporte }}</p>
+      <p><strong>Lugar del delito: </strong> {{ delito.direc_delito }}</p>
+
+      <!-- MAPA -->  
+        <div class="futuro-mapa">
+          <img src="../../assets/icon/mapa-ruta.png" alt="mapa.png">
+          
+        </div>
+      <!-- MAPA -->  
+
+      <button  class="btn-Cops justify-content-center" (click)="enviarReporte()"
+      >Enviar a Fuerzas Policiales</button>
+    </ion-content>
+
+</div>

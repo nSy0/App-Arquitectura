@@ -1,0 +1,43 @@
+.body{
+    height: 100%;
+    background-color: #f2f2f2;  /* Un gris pastel claro */
+}
+
+/* Para centrar el logo */
+.logo-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-color: gray;
+}
+
+.boton-recuperar{
+    width: 100%;
+    background-color: #00234c;  /* Color de fondo */
+    color: #ffd100;              /* Color del texto */        
+    padding: 10px 20px;         /* Ajuste de padding para un botón más grande */
+    border-radius: 10px;         /* Bordes redondeados */
+    border: none;               /* Sin bordes adicionales */
+    font-size: 16px;            /* Tamaño del texto */
+    transition: transform 0.2s ease-in-out; /* Animación suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.recuperar-container{
+    width: 100%;
+    max-width: 400px; /* Establece un ancho máximo para el formulario */
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Fondo del formulario */
+    border-radius: 10px; /* Bordes redondeados */
+}
