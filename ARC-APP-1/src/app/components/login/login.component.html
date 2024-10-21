@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="login-container">
+    <form #loginForm="ngForm" (ngSubmit)="login()">
+      <div class="logo-cont">
+        <app-logo></app-logo>
+      </div>
+
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input
+          type="email"
+          name="email"
+          [(ngModel)]="email"
+          required
+          email
+          #emailCtrl="ngModel"
+        ></ion-input>
+      </ion-item>
+      <div *ngIf="emailCtrl.invalid && emailCtrl.touched" class="error-message">
+        <p *ngIf="emailCtrl.errors?.['required']">El email es obligatorio.</p>
+        <p *ngIf="emailCtrl.errors?.['email']">Ingresa un email válido.</p>
+      </div>
+
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input
+          type="password"
+          name="password"
+          [(ngModel)]="password"
+          required
+          minlength="6"
+          #passwordCtrl="ngModel"
+        ></ion-input>
+      </ion-item>
+      <div *ngIf="passwordCtrl.invalid && passwordCtrl.touched" class="error-message">
+        <p *ngIf="passwordCtrl.errors?.['required']">La contraseña es obligatoria.</p>
+        <p *ngIf="passwordCtrl.errors?.['minlength']">La contraseña debe tener al menos 6 caracteres.</p>
+      </div>
+
+      <br />
+
+      <a [routerLink]="['/forgot']">¿Olvidaste tu contraseña?</a>
+
+      <br>
+      <br>
+
+      <button
+        class="boton-ingresar"
+        type="submit"
+        [disabled]="loginForm.invalid"
+      >
+        Ingresar
+      </button>
+    </form>
+  </div>
+</div>

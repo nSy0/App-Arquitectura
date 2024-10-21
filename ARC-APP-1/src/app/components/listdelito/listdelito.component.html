@@ -1,0 +1,40 @@
+
+<body>
+  
+    <div class="container">
+      <aside class="aside-color">
+        <ul class="list-aside">
+          <div>
+            <li><a [routerLink]="['/inicio']" class="links">Registrar delito</a></li>
+            <li><a [routerLink]="['/listar-delitos']" class="links">Reportes</a></li>
+          </div>
+          
+          <div>
+            <p><a (click)="logout()">Log out</a></p>
+          </div>
+        </ul>
+      </aside>
+
+      <div class="cont-card row m-0 d-flex justify-content-center flex-wrap"  > 
+          <ion-item *ngFor="let delito of delito" ><!--delito(usar aca) of delito(del componente)-->
+            <ion-card class="cardDelito" >
+              <img src="" alt="">
+
+              <ion-card-header>
+                <ion-card-title> Número de reporte: {{delito.num_delito}}</ion-card-title>
+              </ion-card-header>  
+
+                <ion-card-content>
+                  <p><strong>Fecha delito: </strong> {{delito.fecha_delito}}</p>
+                  <p><strong>Nombre víctima: </strong> {{delito.nombre_vic}} </p>
+                </ion-card-content>
+                
+              <button  class="btn-report justify-content-center" (click)="openModal(delito)">Ver reporte</button>
+            
+            </ion-card>
+          </ion-item>
+      </div> 
+    </div>
+
+
+</body>  
